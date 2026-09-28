@@ -75,9 +75,9 @@ main,footer{position:relative;z-index:2}
   .menubar.open .mb-links{opacity:1;visibility:visible;transform:none;transition:opacity .25s var(--ease),transform .25s var(--ease),visibility 0s}
 }
 
-.ctrl{position:fixed;z-index:95;top:calc(var(--bar-h) + 10px);left:10px;width:min(340px,calc(100vw - 20px));opacity:0;transform:translateY(-6px) scale(.97);transform-origin:16px -8px;transition:opacity .22s var(--ease),transform .3s var(--ease)}
-.ctrl[hidden]{display:none}
-.ctrl.open{opacity:1;transform:none}
+.win.ctrl{position:fixed;z-index:95;left:50%;top:50%;margin:0;width:min(340px,calc(100vw - 24px));max-height:calc(100vh - 24px);overflow-y:auto;opacity:0;transform:translate(-50%,-47%) scale(.96);transition:opacity .22s var(--ease),transform .32s var(--spring);box-shadow:var(--win-sh),var(--hard)}
+.win.ctrl[hidden]{display:none}
+.win.ctrl.open{opacity:1;transform:translate(-50%,-50%)}
 .c-close{position:absolute;z-index:2;right:8px;top:50%;width:20px;height:20px;margin-top:-10px;padding:0;border:1px solid var(--edge);background:var(--win);color:var(--ink);font:700 14px/18px var(--mono);cursor:pointer;box-shadow:0 0 0 4px var(--win)}
 .c-close:hover{background:var(--ink);color:var(--bg0)}
 .c-body{padding:16px 18px 14px}
@@ -370,8 +370,8 @@ h2 em{font-style:normal;color:var(--acc-text)}
 .ring-bg{stroke:rgba(var(--fg),.1)}
 .ring-fg{stroke:var(--green);stroke-linecap:round;stroke-dasharray:22 78;animation:ringdash 2.8s linear infinite}
 @keyframes ringdash{to{stroke-dashoffset:-100}}
-.ring-num{position:absolute;inset:0;display:grid;place-content:center;text-align:center;line-height:1.15}
-.ring-num b{font-size:1.25rem;font-variant-numeric:tabular-nums}.ring-num span{font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.04em}
+.ring-num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-align:center;line-height:1}
+.ring-num b{font-size:1.25rem;font-variant-numeric:tabular-nums}.ring-num span{font-size:9px;color:var(--muted);font-weight:600;letter-spacing:.12em;text-transform:uppercase}
 
 .awards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
 .award{display:block;width:100%;height:100%;padding:0;border:0;background:none;color:inherit;font:inherit;text-align:left;cursor:pointer;perspective:1200px;-webkit-tap-highlight-color:transparent}
@@ -736,7 +736,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
               <li><svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="12" cy="18" r="2.2"/><circle cx="18" cy="18" r="2.2"/><path d="M11 7.1l-4 8.8M12 7.2v8.6M13 7.1l4 8.8"/></svg>Algorithms</li>
               <li><svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="8" height="6" rx="1"/><rect x="13" y="14.5" width="8" height="6" rx="1"/><path d="M7 9.5v8h6M11 15.3l2.2 2.2-2.2 2.2"/></svg>Systems Design</li>
               <li><svg class="ai spk" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3l1.8 5.2L18 10l-5.2 1.8L11 17l-1.8-5.2L4 10l5.2-1.8z"/><path class="s2" d="M18.5 15.5l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7z"/></svg>Applied AI</li>
-              <li><svg class="ai" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H10l-4 4v-4H4z"/><path d="M8.5 9h7M8.5 12h4"/></svg>French</li>
+              
             </ul>
           </div>
         </div>
@@ -860,7 +860,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
           <div class="tbar"><span class="tlabel">Education.txt</span></div>
           <div class="edu-body">
             <div class="edu-main">
-              <div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52" pathLength="100"/></svg><div class="ring-num"><b data-scramble="3.XX">3.XX</b><span>/ 4.00 CGPA</span></div></div>
+              <div class="ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fg" cx="60" cy="60" r="52" pathLength="100"/></svg><div class="ring-num"><span>CGPA</span><b data-scramble="3.XX">3.XX</b><span>of 4.00</span></div></div>
               <div><p class="meta">Education</p><h3>B.Sc. in Computer Science</h3><p class="edu-sub">BRAC University</p><p class="edu-sub">Jan 2023 – Jan 2027 (expected)</p></div>
             </div>
             <div>
