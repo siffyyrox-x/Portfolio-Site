@@ -753,11 +753,6 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
 .macro .pi{font-family:var(--serif);font-size:9px;font-weight:600;fill:#f0bd5e}
 @keyframes mbar{0%{transform:scaleY(0)}25%,88%{transform:scaleY(1)}100%{transform:scaleY(0)}}
 @keyframes mline{0%,28%{stroke-dashoffset:100}58%,88%{stroke-dashoffset:0}100%{stroke-dashoffset:100}}
-.seal{position:absolute;z-index:6;right:6cqw;top:4cqw;display:flex;flex-direction:column;align-items:center;justify-content:center;width:22cqw;height:22cqw;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ffeeb5,#f0bd5e 55%,#b9831f);box-shadow:0 1.5cqw 3cqw rgba(0,0,0,.45),inset 0 0 0 .8cqw rgba(255,255,255,.28);color:#3a2504;transform:rotate(12deg);animation:sealw 4s ease-in-out infinite}
-.seal b{font-family:var(--serif);font-size:9.5cqw;font-weight:700;line-height:1}
-.seal small{margin-top:.3cqw;font-size:2.5cqw;font-weight:700;line-height:1.1;letter-spacing:.05em;text-align:center;text-transform:uppercase}
-@keyframes sealw{0%,100%{transform:rotate(12deg)}50%{transform:rotate(4deg) scale(1.06)}}
-.cap .cap-win{margin-top:6px;color:var(--amber);color:color-mix(in srgb,var(--amber) var(--mixp),#000);font-size:12px;font-weight:600}
 .sqa{background:radial-gradient(70% 40% at 55% 25%,rgba(163,230,53,.13),transparent 70%),linear-gradient(165deg,#0f2433,#0a1824 60%,#050c13);--nc:#a3e635}
 .sqa .tw{fill:rgba(255,255,255,.04);stroke:rgba(163,230,53,.35);stroke-width:.9}
 .sqa .tn{font-size:6px;font-weight:600;fill:#d6e6dc}
@@ -773,6 +768,16 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
 @keyframes sqbad{0%,44%{opacity:0}48%,62%{opacity:1}66%,100%{opacity:0}}
 @keyframes sq4{0%,66%{opacity:0}70%,88%{opacity:1}94%,100%{opacity:0}}
 @keyframes sqbar{0%{transform:scaleX(0)}70%,88%{transform:scaleX(1)}94%,100%{transform:scaleX(0)}}
+.term{background:radial-gradient(70% 40% at 55% 25%,rgba(82,227,164,.1),transparent 70%),linear-gradient(165deg,#161a1f,#0e1115 60%,#07090c);--nc:#52e3a4}
+.term .tw{fill:#0b0d10;stroke:rgba(82,227,164,.35);stroke-width:.9}
+.term .tb{fill:#232830}
+.term .tt{font-size:5px;font-weight:600;fill:#9aa3ad;text-anchor:middle}
+.term .pr{font-size:6.4px;font-weight:700;fill:#52e3a4}
+.term .cm{font-size:6.4px;font-weight:600;fill:#e6e3f0}
+.term .cl{opacity:0;animation:tcl 8s infinite;animation-delay:var(--t)}
+.term .cur{fill:#52e3a4;animation:blink2 1s steps(1) infinite}
+@keyframes tcl{0%{opacity:0;transform:translateX(-3px)}6%,86%{opacity:1;transform:none}94%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.term .cl{opacity:1}}
 .soon{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:34px;padding:14px 18px;border:1px dashed var(--edge2);color:var(--muted);font-size:13.5px;text-align:center}
 .soon p{margin:0}
 .soon-nb{position:relative;width:24px;height:30px;flex:none}
@@ -1564,13 +1569,13 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
               <span class="book-shadow"></span>
               <span class="b3d">
                 <span class="face front cover nbk macro">
-                  <span class="spiral"></span><span class="seal" aria-hidden="true"><b>A</b><small>top of<br>section</small></span>
+                  <span class="spiral"></span>
                   <span class="art"><svg class="nart" viewBox="0 0 100 80" aria-hidden="true"><path class="ax" d="M8 6V70H96"/><text class="lb" x="11" y="8">GDP</text><rect class="mb" x="16" y="52" width="8" height="18" style="animation-delay:0.00s"/><rect class="mb" x="29" y="46" width="8" height="24" style="animation-delay:0.18s"/><rect class="mb" x="42" y="48" width="8" height="22" style="animation-delay:0.36s"/><rect class="mb" x="55" y="38" width="8" height="32" style="animation-delay:0.54s"/><rect class="mb" x="68" y="30" width="8" height="40" style="animation-delay:0.72s"/><rect class="mb" x="81" y="22" width="8" height="48" style="animation-delay:0.90s"/><polyline class="infl" pathLength="100" points="20,50 33,42 46,46 59,34 72,38 85,26"/><text class="pi" x="89" y="31">π</text></svg></span>
                   <span class="ct"><span class="nb-code">ECO102</span><span class="t">Introduction to Macroeconomics</span><span class="nb-src"><i></i>Website</span></span>
                 </span>
                 <span class="face pages"></span><span class="face spine" style="--sp:#0c1733"></span><span class="face back" style="--b1:#0c1733;--b2:#05060a"></span>
               </span></a></div>
-            <div class="cap"><h3>Introduction to Macroeconomics</h3><p>ECO102 · Website ↗</p><p class="cap-win">Helped me score an A, the highest in my section</p></div>
+            <div class="cap"><h3>Introduction to Macroeconomics</h3><p>ECO102 · Website ↗</p></div>
           </div>
           <div class="reveal" style="--d:.16s">
             <div class="book-stage"><a class="book lnk" href="https://siffyyrox-x.github.io/Computer-Architecture/" target="_blank" rel="noopener noreferrer" aria-label="CSE340 Computer Architecture notes, Website (opens in a new tab)">
@@ -1624,6 +1629,19 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
               </span></a></div>
             <div class="cap"><h3>Software Quality Assurance</h3><p>Self-Study · Website ↗</p></div>
           </div>
+          <div class="reveal" style="--d:.16s">
+            <div class="book-stage"><a class="book lnk" href="https://drive.google.com/file/d/1q9MygYgsK6I_ohsbMUIvJWca6L2O1_Ug/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="SELF-STUDY Terminal Commands notes, Google Drive (opens in a new tab)">
+              <span class="book-shadow"></span>
+              <span class="b3d">
+                <span class="face front cover nbk term">
+                  <span class="spiral"></span>
+                  <span class="art"><svg class="nart" viewBox="0 0 100 80" aria-hidden="true"><rect class="tw" x="2" y="2" width="96" height="70" rx="3"/><path class="tb" d="M2 5a3 3 0 0 1 3-3h90a3 3 0 0 1 3 3v6H2Z"/><circle cx="8" cy="6.5" r="1.6" fill="#ff7a6b"/><circle cx="13" cy="6.5" r="1.6" fill="#f0bd5e"/><circle cx="18" cy="6.5" r="1.6" fill="#52e3a4"/><text class="tt" x="50" y="8.4">bash</text><g class="cl" style="--t:0.0s"><text class="pr" x="6" y="22">$</text><text class="cm" x="11" y="22">ls -la</text></g><g class="cl" style="--t:0.7s"><text class="pr" x="6" y="32">$</text><text class="cm" x="11" y="32">cd projects</text></g><g class="cl" style="--t:1.4s"><text class="pr" x="6" y="42">$</text><text class="cm" x="11" y="42">git status</text></g><g class="cl" style="--t:2.1s"><text class="pr" x="6" y="52">$</text><text class="cm" x="11" y="52">grep -rn &quot;TODO&quot; .</text></g><g class="cl" style="--t:2.8s"><text class="pr" x="6" y="62">$</text><rect class="cur" x="11" y="57" width="3.2" height="6"/></g></svg></span>
+                  <span class="ct"><span class="nb-code">SELF-STUDY</span><span class="t">Terminal Commands</span><span class="nb-src"><i></i>Google Drive</span></span>
+                </span>
+                <span class="face pages"></span><span class="face spine" style="--sp:#0e1115"></span><span class="face back" style="--b1:#0e1115;--b2:#05060a"></span>
+              </span></a></div>
+            <div class="cap"><h3>Terminal Commands</h3><p>Self-Study · Google Drive ↗</p></div>
+          </div>
         </div>
         <div class="soon reveal"><span class="soon-nb" aria-hidden="true"><i></i><i></i><i></i></span><p>More notes from other courses will be added later<span class="soon-dots" aria-hidden="true"><i>.</i><i>.</i><i>.</i></span></p></div>
       </div>
@@ -1636,7 +1654,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
     <div class="win reveal">
       <div class="tbar"><span class="tlabel">Blogs</span></div>
       <div class="wbody">
-        <header class="sec-head"><p class="kicker"><i class="pw" aria-hidden="true"></i>Blogs</p><h2>Things I've <em>written</em></h2><p class="sec-sub">Essays on politics, power and technology, published on Medium.</p></header>
+        <header class="sec-head"><p class="kicker"><i class="pw" aria-hidden="true"></i>Blogs</p><h2>Things I've <em>written</em></h2><p class="sec-sub">Write-ups on politics, power and technology, and my random 3 am thoughts, published on Medium.</p></header>
         <p class="hint">Hover to straighten · Click to read ↗</p>
         <div class="posts">
           <article class="post reveal" style="--rgb:110,231,249">
@@ -1668,13 +1686,13 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
                 <g class="lv-scan"><rect x="-30" y="-4" width="160" height="8" fill="url(#levscan)"/><rect x="-30" y="-.35" width="160" height=".7" fill="#6ee7f9" opacity=".75"/></g>
               </svg></span>
                   <span class="sheet-h sm">Digital Surveillance, Sovereign Authority, and the Social Contract</span>
-                  <span class="sheet-by">Sifat Sadakin · Essay</span>
+                  <span class="sheet-by">Sifat Sadakin</span>
                   <span class="sheet-lines"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i></span>
                 </span>
               </span>
             </a>
             <div class="post-info">
-              <p class="meta">Essay · Oct 3, 2026 · 3 min read</p>
+              <p class="meta">Oct 3, 2026 · 3 min read</p>
               <h3><a href="https://medium.com/@siffyyrox_x/digital-surveillance-sovereign-authority-and-the-social-contract-043460611ff9" target="_blank" rel="noopener noreferrer">Digital Surveillance, Sovereign Authority, and the Social Contract</a></h3>
               <p>Reads mass surveillance through social contract theory: Hobbes might defend it in the name of security, but Locke&#8217;s natural rights call for a limited, accountable government, with Bangladesh&#8217;s 2024 uprising as the case study.</p>
               <a class="read-link" href="https://medium.com/@siffyyrox_x/digital-surveillance-sovereign-authority-and-the-social-contract-043460611ff9" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium" aria-hidden="true"></i>Read on Medium ↗</a>
@@ -1699,13 +1717,13 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
                 <g class="dm-crowd" fill="#0a0d1a" stroke="#0a0d1a" stroke-width="2.2" stroke-linecap="round"><circle cx="-26.0" cy="82.0" r="3.9"/><path d="M-32.5 100C-32.5 87.0 -19.5 87.0 -19.5 100Z"/><circle cx="-14.4" cy="85.0" r="3.9"/><path d="M-20.9 100C-20.9 90.0 -7.9 90.0 -7.9 100Z"/><circle cx="-2.8" cy="82.0" r="3.9"/><path d="M-9.3 100C-9.3 87.0 3.7 87.0 3.7 100Z"/><circle cx="8.8" cy="85.0" r="3.9"/><path d="M2.3 100C2.3 90.0 15.3 90.0 15.3 100Z"/><circle cx="20.4" cy="82.0" r="3.9"/><path d="M13.9 100C13.9 87.0 26.9 87.0 26.9 100Z"/><circle cx="32.0" cy="85.0" r="3.9"/><path d="M25.5 100C25.5 90.0 38.5 90.0 38.5 100Z"/><circle cx="43.6" cy="82.0" r="3.9"/><path d="M37.1 100C37.1 87.0 50.1 87.0 50.1 100Z"/><circle cx="55.2" cy="85.0" r="3.9"/><path d="M48.7 100C48.7 90.0 61.7 90.0 61.7 100Z"/><circle cx="66.8" cy="82.0" r="3.9"/><path d="M60.3 100C60.3 87.0 73.3 87.0 73.3 100Z"/><circle cx="78.4" cy="85.0" r="3.9"/><path d="M71.9 100C71.9 90.0 84.9 90.0 84.9 100Z"/><circle cx="90.0" cy="82.0" r="3.9"/><path d="M83.5 100C83.5 87.0 96.5 87.0 96.5 100Z"/><circle cx="101.6" cy="85.0" r="3.9"/><path d="M95.1 100C95.1 90.0 108.1 90.0 108.1 100Z"/><circle cx="113.2" cy="82.0" r="3.9"/><path d="M106.7 100C106.7 87.0 119.7 87.0 119.7 100Z"/><circle cx="124.8" cy="85.0" r="3.9"/><path d="M118.3 100C118.3 90.0 131.3 90.0 131.3 100Z"/><g class="dm-arm" style="transform-origin:1.7px 88.0px;animation-delay:-0.7s"><path d="M1.7 88.0L5.7 72.0"/><circle cx="5.7" cy="71.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:36.5px 91.0px;animation-delay:-1.9s"><path d="M36.5 91.0L40.5 75.0"/><circle cx="40.5" cy="74.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:82.9px 91.0px;animation-delay:-3.3s"><path d="M82.9 91.0L86.9 75.0"/><circle cx="86.9" cy="74.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:117.7px 88.0px;animation-delay:-4.4s"><path d="M117.7 88.0L121.7 72.0"/><circle cx="121.7" cy="71.0" r="1.9"/></g></g>
               </svg></span>
                   <span class="sheet-k">Egypt · Tunisia · Hong Kong · Sri Lanka</span><span class="sheet-h">Democracy Beyond Elections</span>
-                  <span class="sheet-by">Sifat Sadakin · Essay</span>
+                  <span class="sheet-by">Sifat Sadakin</span>
                   <span class="sheet-lines"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i></span>
                 </span>
               </span>
             </a>
             <div class="post-info">
-              <p class="meta">Essay · Oct 3, 2026 · 2 min read</p>
+              <p class="meta">Oct 3, 2026 · 2 min read</p>
               <h3><a href="https://medium.com/@siffyyrox_x/democracy-beyond-elections-comparing-egypt-tunisia-hong-kong-and-sri-lanka-826c8f708937" target="_blank" rel="noopener noreferrer">Democracy Beyond Elections: Comparing Egypt, Tunisia, Hong Kong, and Sri Lanka</a></h3>
               <p>Uses Freedom House scores to show that democracy is more than holding elections, comparing how four very different places fall short of real competition and the ability to challenge power.</p>
               <a class="read-link" href="https://medium.com/@siffyyrox_x/democracy-beyond-elections-comparing-egypt-tunisia-hong-kong-and-sri-lanka-826c8f708937" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium" aria-hidden="true"></i>Read on Medium ↗</a>
