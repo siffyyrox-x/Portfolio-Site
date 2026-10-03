@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Sifat Sadakin</title>
-<meta name="description" content="Sifat Sadakin — Computer Science undergrad at BRAC University deepening his knowledge of software engineering, conducting computer vision research and vibe coding occasionally.">
+<meta name="description" content="Sifat Sadakin — Computer Science undergrad at BRAC University and aspiring software engineer, deepening his knowledge of system design and conducting computer vision research.">
 <meta name="theme-color" id="themeColor" content="#0b0b10">
 <meta property="og:title" content="Sifat Sadakin">
 <meta property="og:description" content="CS undergrad at BRAC University · Software engineering · Computer vision research · Teaching.">
@@ -782,8 +782,8 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
 .soon-dots i{display:inline-block;font-style:normal;animation:sdot 1.4s ease-in-out infinite}
 .soon-dots i:nth-child(2){animation-delay:.2s}.soon-dots i:nth-child(3){animation-delay:.4s}
 @keyframes sdot{0%,60%,100%{transform:none;opacity:.4}30%{transform:translateY(-4px);opacity:1}}
-.posts{display:grid;grid-template-columns:1fr;gap:34px;max-width:880px}
-.post{--gap:18px;display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:16px 30px;align-items:center}
+.posts{display:grid;grid-template-columns:1fr;gap:38px;max-width:880px}
+.post{display:grid;grid-template-columns:minmax(0,200px) minmax(0,1fr);gap:16px 32px;align-items:center}
 .post-info h3{margin:6px 0 8px;font-size:1.02rem;line-height:1.45}
 .post-info h3 a{color:var(--ink);text-decoration:none}
 .post-info h3 a:hover{text-decoration:underline;text-decoration-color:rgba(var(--acc-rgb),.6);text-underline-offset:3px}
@@ -791,10 +791,36 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
 .read-link{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:7px 12px;border:1px solid var(--edge);background:var(--win2);color:var(--ink);font-size:12.5px;font-weight:600;line-height:1;text-decoration:none;box-shadow:3px 3px 0 var(--shadow);transition:transform .35s var(--spring),background-color .2s,color .2s}
 .read-link:hover{background:var(--ink);color:var(--bg0);transform:translateY(-2px)}
 .read-link:hover i{color:inherit}
-.lev{background:#120d19}
-.lev .levi,.dem .demo{position:absolute;left:0;top:0;width:100%;height:auto}
-.lev .t{margin-top:auto;font-family:var(--serif);font-weight:600;font-size:7.2cqw;line-height:1.1;color:#f3e7c9}
-.lev .a{margin-top:3cqw;font-size:4.2cqw;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:#c9b27c}
+.paper-stage{position:relative;display:block;width:min(100%,190px);aspect-ratio:1/1.35;margin:10px auto 14px;perspective:1100px;container-type:inline-size;color:#1b1626;text-decoration:none;-webkit-tap-highlight-color:transparent}
+.pp{position:absolute;inset:0;transform-style:preserve-3d;transform:rotateY(-18deg) rotateX(5deg);transition:transform .9s var(--ease)}
+.paper-stage:hover .pp,.paper-stage:focus-visible .pp{transform:rotateY(-4deg) rotateX(0) translateY(-8px)}
+.paper{position:absolute;inset:0;border-radius:2px;background:#f4efe4}
+.p1{background:#e6dfcf;transform:translate(5px,6px) rotate(2.2deg);box-shadow:0 4px 10px rgba(0,0,0,.35)}
+.p2{background:#d9d1bf;transform:translate(10px,11px) rotate(4.4deg);box-shadow:0 4px 10px rgba(0,0,0,.35)}
+.paper-stage:hover .p1{transform:translate(8px,8px) rotate(3.5deg)}
+.paper-stage:hover .p2{transform:translate(15px,14px) rotate(6.5deg)}
+.p1,.p2{transition:transform .9s var(--ease)}
+.sheet{display:flex;flex-direction:column;padding:7cqw 7cqw 6cqw;overflow:hidden;box-shadow:0 10px 24px rgba(0,0,0,.45);clip-path:polygon(0 0,calc(100% - 10cqw) 0,100% 10cqw,100% 100%,0 100%)}
+.sheet::after{content:"";position:absolute;right:0;top:0;width:10cqw;height:10cqw;background:linear-gradient(225deg,transparent 50%,#cfc5ae 50%,#e9e2d3);box-shadow:-1px 1px 3px rgba(0,0,0,.18);transition:width .5s var(--ease),height .5s var(--ease)}
+.sheet-bar{position:absolute;left:0;top:0;height:1.4cqw;width:0;background:rgb(var(--rgb));transition:width 1.6s linear}
+.paper-stage:hover .sheet-bar{width:100%}
+.sheet-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3cqw;padding-bottom:2cqw;border-bottom:.5cqw solid #1b1626;font-size:4cqw;font-weight:600;letter-spacing:.06em;color:#5b5466}
+.sheet-top b{font-family:var(--serif);font-size:5.4cqw;font-weight:700;letter-spacing:0;color:#1b1626}
+.sheet-img{display:block;aspect-ratio:16/10;overflow:hidden;border-radius:1cqw;background:#0f0c18}
+.sheet-svg{display:block;width:100%;height:100%}
+.sheet-k{margin-top:3.4cqw;font-size:3.3cqw;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#a0701d}
+.sheet-h{margin-top:2.6cqw;font-family:var(--serif);font-size:8.4cqw;font-weight:700;line-height:1.08;color:#1b1626}
+.sheet-h.sm{margin-top:3.4cqw;font-size:6.6cqw}
+.sheet-by{margin-top:2.4cqw;font-size:3.6cqw;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#7a7285}
+.sheet-lines{display:flex;flex-direction:column;gap:2.4cqw;margin-top:auto}
+.sheet-lines i{display:block;height:1.7cqw;border-radius:1cqw;background:#cbc3b3;transform-origin:0 50%;animation:typeline 8s ease-in-out infinite;animation-delay:calc(var(--n) * .45s)}
+.sheet-lines i:nth-child(2){width:94%}.sheet-lines i:nth-child(3){width:97%}.sheet-lines i:nth-child(4){width:58%}
+@keyframes typeline{0%{transform:scaleX(0)}16%,84%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+.paper-shadow{position:absolute;left:8%;right:-4%;bottom:-12px;height:18px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.55),transparent);transition:transform .9s var(--ease),opacity .9s}
+.paper-stage:hover .paper-shadow{transform:scale(.85);opacity:.7}
+.lv-st circle{animation:twinkle 3.4s ease-in-out infinite;animation-delay:var(--t)}
+.dm-sign{animation:dmarm 2.8s ease-in-out infinite alternate}
+@media (max-width:520px){.post{grid-template-columns:1fr}.post-info{text-align:center}}
 .lv-tw{animation:lvtw 2.6s ease-in-out infinite}
 @keyframes lvtw{0%,100%{opacity:.15}50%{opacity:.85}}
 .lv-eye{fill:#ff5d6c;animation:lveye 5s ease-in-out infinite}
@@ -802,9 +828,6 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
 .lv-win rect{animation:twinkle 3.6s ease-in-out infinite;animation-delay:var(--t)}
 .lv-scan{animation:lvscan 5s ease-in-out infinite alternate}
 @keyframes lvscan{from{transform:translateY(6px)}to{transform:translateY(96px)}}
-.dem{background:#0a0d1a}
-.dem .t{margin-top:auto;font-family:var(--serif);font-weight:600;font-size:9.4cqw;line-height:1.05;color:#f2ecff}
-.dem .a{margin-top:3.4cqw;font-size:3.9cqw;font-weight:600;line-height:1.5;letter-spacing:.12em;text-transform:uppercase;color:#f0bd5e}
 .dm-st circle{animation:twinkle 3.4s ease-in-out infinite;animation-delay:var(--t)}
 .dm-ballot{opacity:0;animation:dmb 6s ease-in infinite}
 .dm-ballot.b1{opacity:1;transform:translateY(14px)}
@@ -814,7 +837,6 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
 @keyframes dmb{0%{transform:translateY(-18px);opacity:0}8%{opacity:1}30%{transform:translateY(30px);opacity:1}36%,100%{transform:translateY(34px);opacity:0}}
 .dm-arm{animation:dmarm 2.4s ease-in-out infinite alternate}
 @keyframes dmarm{from{transform:rotate(-10deg)}to{transform:rotate(12deg)}}
-@media (max-width:520px){.post{grid-template-columns:1fr}.post .book-stage{width:100%;max-width:210px;margin-inline:auto}.post-info{text-align:center}}
 </style>
 </head>
 <body>
@@ -840,7 +862,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
       <a class="mb-item" href="#stack">Stack</a>
       <a class="mb-item" href="#books">Books</a>
       <a class="mb-item" href="#notes">Notes</a>
-      <a class="mb-item" href="#blog">Blog</a>
+      <a class="mb-item" href="#blogs">Blogs</a>
       <a class="mb-item" href="#contact">Contact</a>
       <a class="mb-item" href="Sifat_Sadakin_CV.pdf" target="_blank" rel="noopener">CV<span class="ext" aria-hidden="true">↗</span></a>
     </nav>
@@ -882,7 +904,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
       <div class="wbody">
         <p class="status reveal" style="--d:.1s"><i aria-hidden="true"></i>Online · Open to opportunities · Dhaka, Bangladesh</p>
         <h1 class="hello reveal" style="--d:.16s"><span class="prompt" aria-hidden="true">&gt;</span> Hi, I'm <span class="name">Sifat Sadakin</span><span class="caret" aria-hidden="true"></span></h1>
-        <p class="lead reveal" style="--d:.22s">A Computer Science undergrad at <strong>BRAC University</strong>. I'm deepening my knowledge of <span class="squig">software engineering<svg viewBox="0 0 120 10" preserveAspectRatio="none" aria-hidden="true" style="transition-delay:.5s"><path d="M2 6 Q10 1 18 6 T34 6 T50 6 T66 6 T82 6 T98 6 T118 6" stroke="#6ee7f9"/></svg></span>, conducting <span class="squig">computer vision research<svg viewBox="0 0 120 10" preserveAspectRatio="none" aria-hidden="true" style="transition-delay:.8s"><path d="M2 6 Q10 1 18 6 T34 6 T50 6 T66 6 T82 6 T98 6 T118 6" stroke="#ff9ecd"/></svg></span> and vibe coding occasionally.</p>
+        <p class="lead reveal" style="--d:.22s">A Computer Science undergrad at <strong>BRAC University</strong>. I'm an aspiring software engineer who's currently deepening my knowledge of <span class="squig">system design<svg viewBox="0 0 120 10" preserveAspectRatio="none" aria-hidden="true" style="transition-delay:.5s"><path d="M2 6 Q10 1 18 6 T34 6 T50 6 T66 6 T82 6 T98 6 T118 6" stroke="#6ee7f9"/></svg></span> and conducting <span class="squig">computer vision research<svg viewBox="0 0 120 10" preserveAspectRatio="none" aria-hidden="true" style="transition-delay:.8s"><path d="M2 6 Q10 1 18 6 T34 6 T50 6 T66 6 T82 6 T98 6 T118 6" stroke="#ff9ecd"/></svg></span>.</p>
         <p class="now reveal" style="--d:.28s"><span class="now-label">Right now →</span><span class="rot-wrap" aria-hidden="true"><span class="rot" id="rot">Researching in computer vision</span></span><span class="sr-only">Right now I'm researching in computer vision, working on my thesis and learning system design.</span></p>
         <div class="actions reveal" style="--d:.34s">
           <a class="btn btn-primary magnetic" href="#research">See what I'm working on <span aria-hidden="true">→</span></a>
@@ -985,7 +1007,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
           <div class="tagf t1" style="--z:16"><span>PyTorch</span></div>
           <div class="tagf t2" style="--z:-18"><span>Computer Vision</span></div>
           <div class="tagf t3" style="--z:10"><span>Django</span></div>
-          <div class="tagf t4" style="--z:-12"><span>QA</span></div>
+          <div class="tagf t4" style="--z:-12"><span>DRF</span></div>
           <div class="doodle" id="doodle" aria-hidden="true">Psst…<br>Pet me!<svg viewBox="0 0 70 46" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6C26 4 50 12 60 38"/><path d="M50 34l10 6 3-12"/></svg></div>
         </div>
       </div>
@@ -994,8 +1016,8 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
 </section>
 
 <div class="marquee" aria-hidden="true"><div class="mq-track">
-  <div class="mq-group"><span>Computer vision</span><b></b><span>Anomaly detection</span><b></b><span>Real vs AI images</span><b></b><span>Explainable AI</span><b></b><span>Deep learning</span><b></b><span>Web programming</span><b></b><span>Django</span><b></b><span>Quality assurance</span><b></b><span>Algorithms</span><b></b><span>Teaching CSE110</span><b></b><span>Mentoring</span><b></b><span>Learning French</span><b></b><span>Good books</span><b></b></div>
-  <div class="mq-group"><span>Computer vision</span><b></b><span>Anomaly detection</span><b></b><span>Real vs AI images</span><b></b><span>Explainable AI</span><b></b><span>Deep learning</span><b></b><span>Web programming</span><b></b><span>Django</span><b></b><span>Quality assurance</span><b></b><span>Algorithms</span><b></b><span>Teaching CSE110</span><b></b><span>Mentoring</span><b></b><span>Learning French</span><b></b><span>Good books</span><b></b></div>
+  <div class="mq-group"><span>Computer vision</span><b></b><span>Anomaly detection</span><b></b><span>Real vs AI images</span><b></b><span>Explainable AI</span><b></b><span>Deep learning</span><b></b><span>Web programming</span><b></b><span>Django</span><b></b><span>System design</span><b></b><span>Algorithms</span><b></b><span>Teaching CSE110</span><b></b><span>Mentoring</span><b></b><span>Learning French</span><b></b><span>Good books</span><b></b></div>
+  <div class="mq-group"><span>Computer vision</span><b></b><span>Anomaly detection</span><b></b><span>Real vs AI images</span><b></b><span>Explainable AI</span><b></b><span>Deep learning</span><b></b><span>Web programming</span><b></b><span>Django</span><b></b><span>System design</span><b></b><span>Algorithms</span><b></b><span>Teaching CSE110</span><b></b><span>Mentoring</span><b></b><span>Learning French</span><b></b><span>Good books</span><b></b></div>
 </div></div>
 
 <section id="about">
@@ -1548,7 +1570,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
                 </span>
                 <span class="face pages"></span><span class="face spine" style="--sp:#0c1733"></span><span class="face back" style="--b1:#0c1733;--b2:#05060a"></span>
               </span></a></div>
-            <div class="cap"><h3>Introduction to Macroeconomics</h3><p>ECO102 · Website ↗</p></div>
+            <div class="cap"><h3>Introduction to Macroeconomics</h3><p>ECO102 · Website ↗</p><p class="cap-win">Helped me score an A, the highest in my section</p></div>
           </div>
           <div class="reveal" style="--d:.16s">
             <div class="book-stage"><a class="book lnk" href="https://siffyyrox-x.github.io/Computer-Architecture/" target="_blank" rel="noopener noreferrer" aria-label="CSE340 Computer Architecture notes, Website (opens in a new tab)">
@@ -1609,44 +1631,48 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
   </div>
 </section>
 
-<section id="blog">
+<section id="blogs">
   <div class="wrap">
     <div class="win reveal">
-      <div class="tbar"><span class="tlabel">Blog</span></div>
+      <div class="tbar"><span class="tlabel">Blogs</span></div>
       <div class="wbody">
-        <header class="sec-head"><p class="kicker"><i class="pw" aria-hidden="true"></i>Blog</p><h2>Things I've <em>written</em></h2><p class="sec-sub">Essays on politics, power and technology, published on Medium.</p></header>
+        <header class="sec-head"><p class="kicker"><i class="pw" aria-hidden="true"></i>Blogs</p><h2>Things I've <em>written</em></h2><p class="sec-sub">Essays on politics, power and technology, published on Medium.</p></header>
         <p class="hint">Hover to straighten · Click to read ↗</p>
         <div class="posts">
-          <article class="post reveal">
-            <div class="book-stage"><a class="book lnk" href="https://medium.com/@siffyyrox_x/digital-surveillance-sovereign-authority-and-the-social-contract-043460611ff9" target="_blank" rel="noopener noreferrer" aria-label="Read Digital Surveillance, Sovereign Authority, and the Social Contract on Medium (opens in a new tab)">
-              <span class="book-shadow"></span>
-              <span class="b3d">
-                <span class="face front cover lev">
-                  <span class="art">
-                    <svg class="levi" viewBox="0 0 100 100" aria-hidden="true">
-                      <defs>
-                        <linearGradient id="levsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141126"/><stop offset=".55" stop-color="#2b2140"/><stop offset=".88" stop-color="#5a3a4a"/></linearGradient>
-                        <linearGradient id="levscan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ee7f9" stop-opacity="0"/><stop offset=".5" stop-color="#6ee7f9" stop-opacity=".28"/><stop offset="1" stop-color="#6ee7f9" stop-opacity="0"/></linearGradient>
-                        <pattern id="levp" width="2.4" height="2.4" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r=".62" fill="#b89f6c"/></pattern>
-                        <pattern id="levq" width="2.4" height="2.4" x="1.2" y="1.2" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r=".5" fill="#f6e3ad"/></pattern>
-                        <g id="levb"><path d="M33 44C36 38 42 35.6 50 35.6S64 38 67 44L64 82H36Z"/><path d="M35.5 45C30.5 42 26.5 36 23.5 28L26.8 26.6C29.3 33 33.3 38 38.2 41Z"/><path d="M64.5 45C69.5 42 73.5 36 76.5 28L73.2 26.6C70.7 33 66.7 38 61.8 41Z"/><circle cx="50" cy="29" r="6.2"/></g>
-                      </defs>
-                      <rect width="100" height="100" fill="url(#levsky)"/>
-                      <path d="M23.8 28.4L15 4" stroke="#d9dde8" stroke-width="1.5" stroke-linecap="round"/><path d="M19.3 26.4L26.7 23.6" stroke="#e8c06a" stroke-width="1.3" stroke-linecap="round"/>
-                      <path d="M75.6 30L80 5.2M80 5.2C80.4 1.2 85.6 1.2 85.2 5.4C84.9 8.2 82 8.4 81.9 6.6" fill="none" stroke="#e8c06a" stroke-width="1.2" stroke-linecap="round"/>
-                      <use href="#levb" fill="#251c30"/><use href="#levb" fill="url(#levp)"/><use class="lv-tw" href="#levb" fill="url(#levq)"/>
-                      <path d="M43.6 25L45 19L47.6 23L50 17.6L52.4 23L55 19L56.4 25Z" fill="#e8c06a"/>
-                      <circle class="lv-eye" cx="47.8" cy="29.4" r=".75"/><circle class="lv-eye" cx="52.2" cy="29.4" r=".75"/>
-                      <path d="M0 70C20 62 35 68 50 66S80 60 100 68V100H0Z" fill="#1b1424"/>
-                      <path d="M0 92V84H5V80H11V86H16V78H18V75L19.5 70L21 75V78H23V86H28V82H35V88H40V100H0ZM56 100V86H62V82H70V87H75V80H83V85H90V81H96V87H100V100Z" fill="#110c18"/>
-                      <g class="lv-win" fill="#f0c46b"><rect x="8.0" y="86.0" width="1.2" height="1.4" style="--t:-0.0s"/><rect x="13.0" y="84.0" width="1.2" height="1.4" style="--t:-1.2s"/><rect x="24.0" y="88.0" width="1.2" height="1.4" style="--t:-2.1s"/><rect x="31.0" y="85.0" width="1.2" height="1.4" style="--t:-0.6s"/><rect x="60.0" y="87.0" width="1.2" height="1.4" style="--t:-1.7s"/><rect x="67.0" y="84.0" width="1.2" height="1.4" style="--t:-2.6s"/><rect x="79.0" y="86.0" width="1.2" height="1.4" style="--t:-0.9s"/><rect x="88.0" y="88.0" width="1.2" height="1.4" style="--t:-1.4s"/><rect x="92.0" y="84.0" width="1.2" height="1.4" style="--t:-2.2s"/></g>
-                      <g class="lv-scan"><rect x="0" y="-4" width="100" height="8" fill="url(#levscan)"/><rect x="0" y="-.35" width="100" height=".7" fill="#6ee7f9" opacity=".75"/></g>
-                    </svg>
-                  </span>
-                  <span class="ct"><span class="t">Digital Surveillance, Sovereign Authority, and the Social Contract</span><span class="a">Sifat Sadakin · Essay</span></span>
+          <article class="post reveal" style="--rgb:110,231,249">
+            <a class="paper-stage" href="https://medium.com/@siffyyrox_x/digital-surveillance-sovereign-authority-and-the-social-contract-043460611ff9" target="_blank" rel="noopener noreferrer" aria-label="Read Digital Surveillance, Sovereign Authority, and the Social Contract on Medium (opens in a new tab)">
+              <span class="paper-shadow"></span>
+              <span class="pp">
+                <span class="paper p2"></span><span class="paper p1"></span>
+                <span class="paper sheet">
+                  <span class="sheet-bar"></span>
+                  <span class="sheet-top"><b>Medium</b><span>3 min read</span></span>
+                  <span class="sheet-img"><svg class="sheet-svg" viewBox="-30 0 160 100" aria-hidden="true">
+                <defs>
+                  <linearGradient id="levsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#141126"/><stop offset=".55" stop-color="#2b2140"/><stop offset=".88" stop-color="#5a3a4a"/></linearGradient>
+                  <linearGradient id="levscan" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ee7f9" stop-opacity="0"/><stop offset=".5" stop-color="#6ee7f9" stop-opacity=".28"/><stop offset="1" stop-color="#6ee7f9" stop-opacity="0"/></linearGradient>
+                  <pattern id="levp" width="2.4" height="2.4" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r=".62" fill="#b89f6c"/></pattern>
+                  <pattern id="levq" width="2.4" height="2.4" x="1.2" y="1.2" patternUnits="userSpaceOnUse"><circle cx="1.2" cy="1.2" r=".5" fill="#f6e3ad"/></pattern>
+                  <g id="levb"><path d="M33 44C36 38 42 35.6 50 35.6S64 38 67 44L64 82H36Z"/><path d="M35.5 45C30.5 42 26.5 36 23.5 28L26.8 26.6C29.3 33 33.3 38 38.2 41Z"/><path d="M64.5 45C69.5 42 73.5 36 76.5 28L73.2 26.6C70.7 33 66.7 38 61.8 41Z"/><circle cx="50" cy="29" r="6.2"/></g>
+                </defs>
+                <rect x="-30" width="160" height="100" fill="url(#levsky)"/>
+                <g class="lv-st" fill="#e9e2ff"><circle cx="-22.0" cy="10.0" r="0.55" style="--t:-0.0s"/><circle cx="-10.0" cy="26.0" r="0.45" style="--t:-1.2s"/><circle cx="-26.0" cy="40.0" r="0.50" style="--t:-2.3s"/><circle cx="112.0" cy="8.0" r="0.55" style="--t:-0.7s"/><circle cx="122.0" cy="24.0" r="0.50" style="--t:-1.8s"/><circle cx="108.0" cy="34.0" r="0.45" style="--t:-2.6s"/><circle cx="127.0" cy="46.0" r="0.40" style="--t:-0.4s"/></g>
+                <path d="M23.8 28.4L15 4" stroke="#d9dde8" stroke-width="1.5" stroke-linecap="round"/><path d="M19.3 26.4L26.7 23.6" stroke="#e8c06a" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M75.6 30L80 5.2M80 5.2C80.4 1.2 85.6 1.2 85.2 5.4C84.9 8.2 82 8.4 81.9 6.6" fill="none" stroke="#e8c06a" stroke-width="1.2" stroke-linecap="round"/>
+                <use href="#levb" fill="#251c30"/><use href="#levb" fill="url(#levp)"/><use class="lv-tw" href="#levb" fill="url(#levq)"/>
+                <path d="M43.6 25L45 19L47.6 23L50 17.6L52.4 23L55 19L56.4 25Z" fill="#e8c06a"/>
+                <circle class="lv-eye" cx="47.8" cy="29.4" r=".75"/><circle class="lv-eye" cx="52.2" cy="29.4" r=".75"/>
+                <path d="M-30 68C-14 62 0 70 14 66C26 62 38 68 50 66S80 60 100 68C112 72 122 63 130 66V100H-30Z" fill="#1b1424"/>
+                <path d="M-30 100V88H-25V83H-19V87H-13V81H-7V85H-2V80H5V84H11V86H16V78H18V75L19.5 70L21 75V78H23V86H28V82H35V88H40V100ZM56 100V86H62V82H70V87H75V80H83V85H90V81H96V87H101V83H107V79H113V85H119V82H124V88H130V100Z" fill="#110c18"/>
+                <g class="lv-win" fill="#f0c46b"><rect x="-23.0" y="90.0" width="1.2" height="1.4" style="--t:-0.3s"/><rect x="-15.0" y="88.0" width="1.2" height="1.4" style="--t:-1.9s"/><rect x="-4.0" y="87.0" width="1.2" height="1.4" style="--t:-1.1s"/><rect x="8.0" y="86.0" width="1.2" height="1.4" style="--t:-0.0s"/><rect x="13.0" y="84.0" width="1.2" height="1.4" style="--t:-1.2s"/><rect x="24.0" y="88.0" width="1.2" height="1.4" style="--t:-2.1s"/><rect x="31.0" y="85.0" width="1.2" height="1.4" style="--t:-0.6s"/><rect x="60.0" y="87.0" width="1.2" height="1.4" style="--t:-1.7s"/><rect x="67.0" y="84.0" width="1.2" height="1.4" style="--t:-2.6s"/><rect x="79.0" y="86.0" width="1.2" height="1.4" style="--t:-0.9s"/><rect x="88.0" y="88.0" width="1.2" height="1.4" style="--t:-1.4s"/><rect x="92.0" y="84.0" width="1.2" height="1.4" style="--t:-2.2s"/><rect x="104.0" y="86.0" width="1.2" height="1.4" style="--t:-0.8s"/><rect x="110.0" y="82.0" width="1.2" height="1.4" style="--t:-2.4s"/><rect x="121.0" y="86.0" width="1.2" height="1.4" style="--t:-1.5s"/></g>
+                <g class="lv-scan"><rect x="-30" y="-4" width="160" height="8" fill="url(#levscan)"/><rect x="-30" y="-.35" width="160" height=".7" fill="#6ee7f9" opacity=".75"/></g>
+              </svg></span>
+                  <span class="sheet-h sm">Digital Surveillance, Sovereign Authority, and the Social Contract</span>
+                  <span class="sheet-by">Sifat Sadakin · Essay</span>
+                  <span class="sheet-lines"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i></span>
                 </span>
-                <span class="face pages"></span><span class="face spine" style="--sp:#120d19"></span><span class="face back" style="--b1:#2b2140;--b2:#06060b"></span>
-              </span></a></div>
+              </span>
+            </a>
             <div class="post-info">
               <p class="meta">Essay · Oct 3, 2026 · 3 min read</p>
               <h3><a href="https://medium.com/@siffyyrox_x/digital-surveillance-sovereign-authority-and-the-social-contract-043460611ff9" target="_blank" rel="noopener noreferrer">Digital Surveillance, Sovereign Authority, and the Social Contract</a></h3>
@@ -1654,26 +1680,30 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:12.5px}
               <a class="read-link" href="https://medium.com/@siffyyrox_x/digital-surveillance-sovereign-authority-and-the-social-contract-043460611ff9" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium" aria-hidden="true"></i>Read on Medium ↗</a>
             </div>
           </article>
-          <article class="post reveal" style="--d:.1s">
-            <div class="book-stage"><a class="book lnk" href="https://medium.com/@siffyyrox_x/democracy-beyond-elections-comparing-egypt-tunisia-hong-kong-and-sri-lanka-826c8f708937" target="_blank" rel="noopener noreferrer" aria-label="Read Democracy Beyond Elections: Comparing Egypt, Tunisia, Hong Kong, and Sri Lanka on Medium (opens in a new tab)">
-              <span class="book-shadow"></span>
-              <span class="b3d">
-                <span class="face front cover dem">
-                  <span class="art">
-                    <svg class="demo" viewBox="0 0 100 100" aria-hidden="true">
-                      <defs><linearGradient id="demsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c2233"/><stop offset=".6" stop-color="#1c2a4a"/><stop offset="1" stop-color="#3a2a52"/></linearGradient></defs>
-                      <rect width="100" height="100" fill="url(#demsky)"/>
-                      <g class="dm-st" fill="#e8f1ff"><circle cx="12" cy="12" r=".55" style="--t:0s"/><circle cx="84" cy="9" r=".5" style="--t:-1.3s"/><circle cx="72" cy="28" r=".45" style="--t:-2.1s"/><circle cx="22" cy="34" r=".5" style="--t:-.7s"/><circle cx="90" cy="40" r=".45" style="--t:-1.8s"/></g>
-                      <g class="dm-ballot b1" style="animation-delay:0.0s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">EG</text></g><g class="dm-ballot b2" style="animation-delay:1.5s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">TN</text></g><g class="dm-ballot b3" style="animation-delay:3.0s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">HK</text></g><g class="dm-ballot b4" style="animation-delay:4.5s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">LK</text></g>
-                      <rect x="28" y="44" width="44" height="4.4" rx="1" fill="#e6dac0"/><rect x="41.5" y="45.3" width="17" height="1.8" rx=".9" fill="#1d1622"/>
-                      <path d="M31 48.4H69L66 70H34Z" fill="#d6c7a8"/><path d="M42 57l5 5 11-11" fill="none" stroke="#1f9d6a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-                      <g class="dm-crowd" fill="#0a0d1a" stroke="#0a0d1a" stroke-width="2.2" stroke-linecap="round"><circle cx="5.0" cy="82.0" r="3.9"/><path d="M-1.5 100C-1.5 87.0 11.5 87.0 11.5 100Z"/><circle cx="16.2" cy="85.0" r="3.9"/><path d="M9.7 100C9.7 90.0 22.7 90.0 22.7 100Z"/><circle cx="27.4" cy="82.0" r="3.9"/><path d="M20.9 100C20.9 87.0 33.9 87.0 33.9 100Z"/><circle cx="38.6" cy="85.0" r="3.9"/><path d="M32.1 100C32.1 90.0 45.1 90.0 45.1 100Z"/><circle cx="49.8" cy="82.0" r="3.9"/><path d="M43.3 100C43.3 87.0 56.3 87.0 56.3 100Z"/><circle cx="61.0" cy="85.0" r="3.9"/><path d="M54.5 100C54.5 90.0 67.5 90.0 67.5 100Z"/><circle cx="72.2" cy="82.0" r="3.9"/><path d="M65.7 100C65.7 87.0 78.7 87.0 78.7 100Z"/><circle cx="83.4" cy="85.0" r="3.9"/><path d="M76.9 100C76.9 90.0 89.9 90.0 89.9 100Z"/><circle cx="94.6" cy="82.0" r="3.9"/><path d="M88.1 100C88.1 87.0 101.1 87.0 101.1 100Z"/><g class="dm-arm" style="transform-origin:20.7px 91.0px;animation-delay:-0.4s"><path d="M20.7 91.0L24.7 75.0"/><circle cx="24.7" cy="74.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:54.3px 88.0px;animation-delay:-1.5s"><path d="M54.3 88.0L58.3 72.0"/><circle cx="58.3" cy="71.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:87.9px 91.0px;animation-delay:-2.6s"><path d="M87.9 91.0L91.9 75.0"/><circle cx="91.9" cy="74.0" r="1.9"/></g></g>
-                    </svg>
-                  </span>
-                  <span class="ct"><span class="t">Democracy Beyond Elections</span><span class="a">Egypt · Tunisia · Hong Kong · Sri Lanka</span></span>
+          <article class="post reveal" style="--rgb:240,189,94;--d:.1s">
+            <a class="paper-stage" href="https://medium.com/@siffyyrox_x/democracy-beyond-elections-comparing-egypt-tunisia-hong-kong-and-sri-lanka-826c8f708937" target="_blank" rel="noopener noreferrer" aria-label="Read Democracy Beyond Elections: Comparing Egypt, Tunisia, Hong Kong, and Sri Lanka on Medium (opens in a new tab)">
+              <span class="paper-shadow"></span>
+              <span class="pp">
+                <span class="paper p2"></span><span class="paper p1"></span>
+                <span class="paper sheet">
+                  <span class="sheet-bar"></span>
+                  <span class="sheet-top"><b>Medium</b><span>2 min read</span></span>
+                  <span class="sheet-img"><svg class="sheet-svg" viewBox="-30 0 160 100" aria-hidden="true">
+                <defs><linearGradient id="demsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0c2233"/><stop offset=".6" stop-color="#1c2a4a"/><stop offset="1" stop-color="#3a2a52"/></linearGradient></defs>
+                <rect x="-30" width="160" height="100" fill="url(#demsky)"/>
+                <g class="dm-st" fill="#e8f1ff"><circle cx="12" cy="12" r=".55" style="--t:0s"/><circle cx="84" cy="9" r=".5" style="--t:-1.3s"/><circle cx="72" cy="28" r=".45" style="--t:-2.1s"/><circle cx="22" cy="34" r=".5" style="--t:-.7s"/><circle cx="90" cy="40" r=".45" style="--t:-1.8s"/><circle cx="-22.0" cy="10.0" r="0.55" style="--t:-0.0s"/><circle cx="-10.0" cy="26.0" r="0.45" style="--t:-1.2s"/><circle cx="-26.0" cy="40.0" r="0.50" style="--t:-2.3s"/><circle cx="112.0" cy="8.0" r="0.55" style="--t:-0.7s"/><circle cx="122.0" cy="24.0" r="0.50" style="--t:-1.8s"/><circle cx="108.0" cy="34.0" r="0.45" style="--t:-2.6s"/><circle cx="127.0" cy="46.0" r="0.40" style="--t:-0.4s"/></g>
+                <g class="dm-ballot b1" style="animation-delay:0.0s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">EG</text></g><g class="dm-ballot b2" style="animation-delay:1.5s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">TN</text></g><g class="dm-ballot b3" style="animation-delay:3.0s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">HK</text></g><g class="dm-ballot b4" style="animation-delay:4.5s"><rect x="43" y="0" width="14" height="16" rx="1"/><path d="M46 5.5l2 2.2 4-4.6"/><text x="50" y="13.6">LK</text></g>
+                <rect x="28" y="44" width="44" height="4.4" rx="1" fill="#e6dac0"/><rect x="41.5" y="45.3" width="17" height="1.8" rx=".9" fill="#1d1622"/>
+                <path d="M31 48.4H69L66 70H34Z" fill="#d6c7a8"/><path d="M42 57l5 5 11-11" fill="none" stroke="#1f9d6a" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <g class="dm-sign" style="transform-origin:-12.0px 96px;animation-delay:-0.4s"><path d="M-12.0 96V66" stroke="#2a2433" stroke-width="1.2"/><rect x="-21.0" y="56" width="18" height="11" rx="1" fill="#efe6d2"/><path d="M-18.0 60h12M-18.0 63.5h8" stroke="#3a2a52" stroke-width="1.2" stroke-linecap="round"/></g><g class="dm-sign" style="transform-origin:112.0px 96px;animation-delay:-1.3s"><path d="M112.0 96V66" stroke="#2a2433" stroke-width="1.2"/><rect x="103.0" y="56" width="18" height="11" rx="1" fill="#efe6d2"/><path d="M106.0 60h12M106.0 63.5h8" stroke="#3a2a52" stroke-width="1.2" stroke-linecap="round"/></g>
+                <g class="dm-crowd" fill="#0a0d1a" stroke="#0a0d1a" stroke-width="2.2" stroke-linecap="round"><circle cx="-26.0" cy="82.0" r="3.9"/><path d="M-32.5 100C-32.5 87.0 -19.5 87.0 -19.5 100Z"/><circle cx="-14.4" cy="85.0" r="3.9"/><path d="M-20.9 100C-20.9 90.0 -7.9 90.0 -7.9 100Z"/><circle cx="-2.8" cy="82.0" r="3.9"/><path d="M-9.3 100C-9.3 87.0 3.7 87.0 3.7 100Z"/><circle cx="8.8" cy="85.0" r="3.9"/><path d="M2.3 100C2.3 90.0 15.3 90.0 15.3 100Z"/><circle cx="20.4" cy="82.0" r="3.9"/><path d="M13.9 100C13.9 87.0 26.9 87.0 26.9 100Z"/><circle cx="32.0" cy="85.0" r="3.9"/><path d="M25.5 100C25.5 90.0 38.5 90.0 38.5 100Z"/><circle cx="43.6" cy="82.0" r="3.9"/><path d="M37.1 100C37.1 87.0 50.1 87.0 50.1 100Z"/><circle cx="55.2" cy="85.0" r="3.9"/><path d="M48.7 100C48.7 90.0 61.7 90.0 61.7 100Z"/><circle cx="66.8" cy="82.0" r="3.9"/><path d="M60.3 100C60.3 87.0 73.3 87.0 73.3 100Z"/><circle cx="78.4" cy="85.0" r="3.9"/><path d="M71.9 100C71.9 90.0 84.9 90.0 84.9 100Z"/><circle cx="90.0" cy="82.0" r="3.9"/><path d="M83.5 100C83.5 87.0 96.5 87.0 96.5 100Z"/><circle cx="101.6" cy="85.0" r="3.9"/><path d="M95.1 100C95.1 90.0 108.1 90.0 108.1 100Z"/><circle cx="113.2" cy="82.0" r="3.9"/><path d="M106.7 100C106.7 87.0 119.7 87.0 119.7 100Z"/><circle cx="124.8" cy="85.0" r="3.9"/><path d="M118.3 100C118.3 90.0 131.3 90.0 131.3 100Z"/><g class="dm-arm" style="transform-origin:1.7px 88.0px;animation-delay:-0.7s"><path d="M1.7 88.0L5.7 72.0"/><circle cx="5.7" cy="71.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:36.5px 91.0px;animation-delay:-1.9s"><path d="M36.5 91.0L40.5 75.0"/><circle cx="40.5" cy="74.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:82.9px 91.0px;animation-delay:-3.3s"><path d="M82.9 91.0L86.9 75.0"/><circle cx="86.9" cy="74.0" r="1.9"/></g><g class="dm-arm" style="transform-origin:117.7px 88.0px;animation-delay:-4.4s"><path d="M117.7 88.0L121.7 72.0"/><circle cx="121.7" cy="71.0" r="1.9"/></g></g>
+              </svg></span>
+                  <span class="sheet-k">Egypt · Tunisia · Hong Kong · Sri Lanka</span><span class="sheet-h">Democracy Beyond Elections</span>
+                  <span class="sheet-by">Sifat Sadakin · Essay</span>
+                  <span class="sheet-lines"><i style="--n:0"></i><i style="--n:1"></i><i style="--n:2"></i><i style="--n:3"></i></span>
                 </span>
-                <span class="face pages"></span><span class="face spine" style="--sp:#10172e"></span><span class="face back" style="--b1:#1c2a4a;--b2:#06060b"></span>
-              </span></a></div>
+              </span>
+            </a>
             <div class="post-info">
               <p class="meta">Essay · Oct 3, 2026 · 2 min read</p>
               <h3><a href="https://medium.com/@siffyyrox_x/democracy-beyond-elections-comparing-egypt-tunisia-hong-kong-and-sri-lanka-826c8f708937" target="_blank" rel="noopener noreferrer">Democracy Beyond Elections: Comparing Egypt, Tunisia, Hong Kong, and Sri Lanka</a></h3>
